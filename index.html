@@ -27,9 +27,15 @@
 				</div>
 				<nav class="header-nav">
 					<ul class="site-nav">
-						<li class="link current"><a href="./">Студия</a></li>
-						<li class="link"><a href="./portfolio.html">Портфолио</a></li>
-						<li class="link"><a href="">Контакты</a></li>
+						<li class="link site-nav-current">
+							<a href="./">Студия</a>
+						</li>
+						<li class="link">
+							<a href="./portfolio.html">Портфолио</a>
+						</li>
+						<li class="link">
+							<a href="">Контакты</a>
+						</li>
 					</ul>
 				</nav>
 				<div class="auth-nav">
@@ -114,14 +120,23 @@
 				<div class="container">
 					<h2 class="section-title">Чем мы занимаемся</h2>
 					<ul class="work-list">
-						<li>
+						<li class="work-thumb">
 							<img src="./images/box1.jpg" width="370" height="294" alt="box1" />
+							<div class="work-description">
+								<p class="work-text">Десктопные приложения</p>
+							</div>
 						</li>
-						<li>
+						<li class="work-thumb">
 							<img src="./images/box2.jpg" width="370" height="294" alt="box2" />
+							<div class="work-description">
+								<p class="work-text">Мобильные приложения</p>
+							</div>
 						</li>
-						<li>
+						<li class="work-thumb">
 							<img src="./images/box3.jpg" width="370" height="294" alt="box3" />
+							<div class="work-description">
+								<p class="work-text">Дизайнерские решения</p>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -402,10 +417,12 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- Modal window -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<p></p>
-				<button type="button" data-modal-close></button>
+				<button type="button" data-modal-close>x</button>
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
